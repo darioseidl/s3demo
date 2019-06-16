@@ -56,6 +56,8 @@ class S3TestService(
 
         if (resource !is SimpleStorageResource)
             throw IllegalStateException("Expected a SimpleStorageResource, but got $resource")
+        else
+            println("OK: $resource")
     }
 
     private fun testWriteAndReadResource() {
